@@ -5,19 +5,19 @@ export const dataAboutMe = [
         id: 1,
         name: "Experiencia",
         icon: <Briefcase />,
-        description: "+4 años de experiencia",
+        description: "+1 años de experiencia",
     },
     {
         id: 2,
         name: "Clientes",
         icon: <UsersRound />,
-        description: "+200 clientes satisfechos",
+        description: "No hay clientes por el momento",
     },
     {
         id: 3,
         name: "Proyectos",
         icon: <Wrench />,
-        description: "+50 completados",
+        description: "+3 completados",
     },
 ];
 
@@ -90,14 +90,14 @@ export const dataPortfolio = [
     },
     {
         id: 3,
-        title: "Estrategias Web",
+        title: "Spring Boot",
         image: "/image-3.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 4,
-        title: "Navegando Ideas Creativas",
+        title: "Desarrollador Backend",
         image: "/image-4.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
@@ -122,11 +122,11 @@ export const dataPortfolio = [
 export const dataExperience = [
     {
         id: 1,
-        title: "Frontend Development  💄",
+        title: "Frontend Developer  💄",
         experience: [
             {
                 name: "HTML",
-                subtitle: "Experimentado",
+                subtitle: "Intermedio",
                 value: 80,
             },
             {
@@ -136,58 +136,58 @@ export const dataExperience = [
             },
             {
                 name: "JavaScript",
-                subtitle: "Experimentado",
+                subtitle: "Intermedio",
                 value: 60,
             },
             {
                 name: "Tailwind CSS",
-                subtitle: "Experimentado",
+                subtitle: "Intermedio",
                 value: 30,
             },
             {
                 name: "React",
-                subtitle: "Experimentado",
+                subtitle: "Basic",
                 value: 60,
             },
             {
                 name: "Bootstrap",
-                subtitle: "Basic",
+                subtitle: "Intermedio",
                 value: 50,
             },
         ],
     },
     {
         id: 2,
-        title: "Backend Development  🥷",
+        title: "Backend Developer  🥷",
         experience: [
             {
-                name: "Node JS",
+                name: "Spring Boot",
                 subtitle: "Experimentado",
                 value: 80,
             },
             {
-                name: "Mongo DB",
+                name: "Postgres Sql",
                 subtitle: "Intermedio",
                 value: 75,
             },
             {
                 name: "Python",
-                subtitle: "Basic",
+                subtitle: "Intermedio",
                 value: 60,
             },
             {
                 name: "MySQL",
-                subtitle: "Experimentado",
+                subtitle: "Intermedio",
                 value: 60,
             },
             {
-                name: "PHP",
-                subtitle: "Experimentado",
-                value: 60,
-            },
-            {
-                name: "Django",
+                name: "PHP - Laravel",
                 subtitle: "Basic",
+                value: 60,
+            },
+            {
+                name: "C#",
+                subtitle: "Intermedio",
                 value: 60,
             },
         ],
@@ -208,75 +208,75 @@ export const dataServices = [
                 name: "Diseño y desarrollo responsive",
             },
             {
-                name: "Optimización SEO",
+                name: "Construcción de componentes reutilizables con React",
             },
             {
                 name: "Desarrollo de aplicaciones web",
             },
             {
-                name: "Gestión de contenido",
+                name: "Manejo básico de herramientas como Git, GitHub, Vite y npm/yarn.",
             },
             {
-                name: "Comercio electrónico",
+                name: "Manejo básico de herramientas como Git, GitHub, Vit",
             },
             {
-                name: "Mantenimiento y soporte continuo",
+                name: "Uso de frameworks como Bootstrap o Tailwind CSS.",
             },
         ],
     },
     {
         id: 2,
-        title: "Creación de contenido",
+        title: "Creación de APIs RESTful",
         icon: <BellPlus />,
         features: [
             {
-                name: "Redacción de contenido original y de calidad",
+                name: "Desarrollo de APIs RESTful utilizando Spring Boot.",
             },
             {
-                name: "Creación de vídeos atractivos y dinámicos",
+                name: "Manejo de bases de datos relacionales como MySQL y PostgreSQL usando JPA/Hibernate.",
             },
             {
-                name: "Diseño gráfico para una imagen impactante",
+                name: "Gestión de autenticación y autorización con Spring Security (login, registro, JWT)",
             },
             {
-                name: "Edición profesional de textos y materiales visuales",
+                name: "Uso de herramientas de desarrollo como Postman, Docker (básico) y Git/GitHub",
             },
             {
-                name: "Estrategias de marketing de contenidos efectivas",
+                name: "Conexión y consumo de APIs externas",
             },
             {
-                name: "Producción de podcasts informativos y entretenidos",
+                name: "Estructura de proyectos por capas (Controller - Service - Repository)",
             },
             {
-                name: "Generación de infografías claras y visualmente atractivas",
+                name: "Manejo de errores, validaciones y respuestas estándar en APIs",
             },
             {
-                name: "Fotografía profesional para capturar momentos excepcionales",
+                name: "Creación de controladores, servicios y modelos siguiendo la arquitectura MVC y Clean Architecture.",
             },
         ],
     },
     {
         id: 3,
-        title: "UI/UX Design",
+        title: "En Aprendizaje de Programacio Full Stack",
         icon: <Brush />,
         features: [
             {
-                name: "Diseño intuitivo para una experiencia de usuario fluida",
+                name: "Arquitectura de microservicios y uso de Spring Cloud / Eureka / API Gateway",
             },
             {
-                name: "Prototipado interactivo para visualizar la interfaz",
+                name: "Testing de servicios con JUnit y Mockito",
             },
             {
-                name: "Investigación de usuarios para comprender necesidades y expectativas",
+                name: "TypeScript para escribir código más robusto",
             },
             {
-                name: "Optimización de la usabilidad para mejorar la accesibilidad",
+                name: "Buenas prácticas de testing y herramientas como Jest o React Testing Library.",
             },
             {
-                name: "Pruebas de usabilidad para evaluar la experiencia",
+                name: "Conceptos de Next.js y rendimiento en aplicaciones web.",
             },
             {
-                name: "Diseño responsive para adaptarse a diferentes dispositivos",
+                name: "Principios SOLID y buenas prácticas en C#",
             },
         ],
     },
@@ -287,22 +287,22 @@ export const dataContact = [
     {
         id: 1,
         title: "Teléfono",
-        subtitle: "+34 677 66 66 33",
-        link: "tel:+34677666633",
+        subtitle: "951 072 293",
+        link: "tel:+51951072293",
         icon: <Phone />,
     },
     {
         id: 2,
         title: "Github",
-        subtitle: "github.com/ratasi",
-        link: "github.com/ratasi",
+        subtitle: "https://github.com/JHOEL-G",
+        link: "https://github.com/JHOEL-G",
         icon: <Code2 />,
     },
     {
         id: 3,
         title: "Email",
-        subtitle: "email@email.com",
-        link: "mailto:test@test.com",
+        subtitle: "yuniorjhoelgarcia@gmail.com",
+        link: "mailto:yuniorjhoelgarcia@gmail.com",
         icon: <Inbox />,
     },
 ];

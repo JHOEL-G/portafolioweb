@@ -10,7 +10,7 @@ const Introduction = () => {
             <div className="text-center" id="home">
                 <h3 className="text-xl mb-3">HOLA A TODOS</h3>
                 <h1 className="text-4xl font-bold mb-3">
-                    JUNIOR JHEOL GARCIA LADINO 👨‍💻
+                    JUNIOR JHOEL GARCIA LADINO 👨‍💻
                 </h1>
                 <h2 className="text-2xl text-gray-400">FULL STACK DEVELOPER JUNIOR</h2>
                 <div className="flex items-center">
