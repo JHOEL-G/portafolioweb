@@ -5,7 +5,7 @@ export const dataAboutMe = [
         id: 1,
         name: "Experiencia",
         icon: <Briefcase />,
-        description: "+1 años de experiencia",
+        description: "+1 año de experiencia",
     },
     {
         id: 2,
@@ -122,7 +122,7 @@ export const dataPortfolio = [
 export const dataExperience = [
     {
         id: 1,
-        title: "Frontend Developer  💄",
+        title: "Frontend Developer 💻",
         experience: [
             {
                 name: "HTML",
@@ -141,13 +141,13 @@ export const dataExperience = [
             },
             {
                 name: "Tailwind CSS",
-                subtitle: "Intermedio",
+                subtitle: "Basico",
                 value: 30,
             },
             {
                 name: "React",
-                subtitle: "Basic",
-                value: 60,
+                subtitle: "Basico",
+                value: 33,
             },
             {
                 name: "Bootstrap",
@@ -158,12 +158,12 @@ export const dataExperience = [
     },
     {
         id: 2,
-        title: "Backend Developer  🥷",
+        title: "Backend Developer 🖥️",
         experience: [
             {
                 name: "Spring Boot",
-                subtitle: "Experimentado",
-                value: 80,
+                subtitle: "Intermedio",
+                value: 68,
             },
             {
                 name: "Postgres Sql",
@@ -182,13 +182,13 @@ export const dataExperience = [
             },
             {
                 name: "PHP - Laravel",
-                subtitle: "Basic",
-                value: 60,
+                subtitle: "Basico",
+                value: 30,
             },
             {
                 name: "C#",
                 subtitle: "Intermedio",
-                value: 60,
+                value: 50,
             },
         ],
     },
@@ -289,6 +289,7 @@ export const dataContact = [
         title: "Teléfono",
         subtitle: "951 072 293",
         link: "tel:+51951072293",
+        buttonText: "LLAMAR", 
         icon: <Phone />,
     },
     {
@@ -296,6 +297,7 @@ export const dataContact = [
         title: "Github",
         subtitle: "https://github.com/JHOEL-G",
         link: "https://github.com/JHOEL-G",
+        buttonText: "VER PERFIL", 
         icon: <Code2 />,
     },
     {
@@ -303,6 +305,7 @@ export const dataContact = [
         title: "Email",
         subtitle: "yuniorjhoelgarcia@gmail.com",
         link: "mailto:yuniorjhoelgarcia@gmail.com",
+        buttonText: "ENVIAR CORREO", 
         icon: <Inbox />,
     },
 ];

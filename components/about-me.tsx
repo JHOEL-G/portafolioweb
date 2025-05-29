@@ -11,7 +11,7 @@ const AboutMe = () => {
             <Title title="SOBRE MI" subtitle="Conoceme" />
             <div className="grid md:grid-cols-2">
                 <div className="py-12 md:py-0 flex items-center justify-center">
-                    <Carousel 
+                    <Carousel
                         opts={{
                             align: "start"
                         }}
@@ -19,15 +19,15 @@ const AboutMe = () => {
                         className="w-full max-w-xs h-fit"
                     >
                         <CarouselContent className="mt-1 h-[200px]">
-                            {dataSlider.map((data) =>(
+                            {dataSlider.map((data) => (
                                 <CarouselItem key={data.id}>
                                     <div className="flex items-center justify-center">
-                                        <Image src={data.url} alt="IMAGE" width={250} height={400} className="w-full h-auto rounded-lg"/>
+                                        <Image src={data.url} alt="IMAGE" width={250} height={400} className="w-full h-auto rounded-lg" />
                                     </div>
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious/>
+                        <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
                 </div>
@@ -41,7 +41,7 @@ const AboutMe = () => {
                             </div>
                         )}
                     </div>
-                    <p className="my-8"> PROGRAMADOR DE SOFTWARE SON LOS MAS CHEVERES </p>
+                    <p className="my-8">Soy un programador de software con pasión por resolver problemas a través del código. Me encanta construir aplicaciones que no solo funcionen bien, sino que también se sientan bien de usar. Disfruto trabajar tanto en el frontend como en el backend, y siempre estoy aprendiendo nuevas tecnologías para mejorar mis habilidades. Creo firmemente que los programadores somos los arquitectos digitales del mundo moderno. Ya sea desarrollando una API eficiente, diseñando una interfaz intuitiva o depurando errores a las 2 a.m., me esfuerzo por dar lo mejor en cada línea de código.</p>
                     <Button>
                         <Phone size={20} className="mr-2" /> HABLAMOS
                     </Button>

@@ -15,7 +15,7 @@ const Testimonials = () => {
                         <CarouselItem key={testimonial.id} className="md:basis-1/3 p-4 text-center flex flex-col items-center border-slate-400 border-2 rounded-lg">
                             <Avatar>
                                 <AvatarImage src={testimonial.imageUrl} alt="PROFILE AVATAR"/>
-                                <AvatarFallback>CN</AvatarFallback>
+                                <AvatarFallback>CARGANDO</AvatarFallback>
                             </Avatar>
                             <div>
                                 <p className="min-h-12 text-2xl mt-4">{testimonial.name}</p>
