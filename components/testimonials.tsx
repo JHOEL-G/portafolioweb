@@ -14,12 +14,12 @@ const Testimonials = () => {
                     {dataTestimonials.map((testimonial) => (
                         <CarouselItem key={testimonial.id} className="md:basis-1/3 p-4 text-center flex flex-col items-center border-slate-400 border-2 rounded-lg">
                             <Avatar>
-                                <AvatarImage src={testimonial.imageUrl} alt="PROFILE AVATAR"/>
+                                <AvatarImage  alt="PROFILE AVATAR"/>
                                 <AvatarFallback>CARGANDO</AvatarFallback>
                             </Avatar>
                             <div>
-                                <p className="min-h-12 text-2xl mt-4">{testimonial.name}</p>
-                                <p>{testimonial.description}</p>
+                                <p className="min-h-12 text-2xl mt-4"></p>
+                                <p> POR EL MOMENTO NO HAY CLIENTES. GRACIAS</p>
                             </div>
                         </CarouselItem>
                     ))}

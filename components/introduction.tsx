@@ -1,4 +1,4 @@
-import {Mail, Paperclip } from "lucide-react";
+import { Mail, Paperclip } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "./ui/button";
@@ -18,17 +18,20 @@ const Introduction = () => {
                         <Link className={buttonVariants()} href="#contact">
                             <Mail className="mr-2" /> CONTACTA CONMIGO
                         </Link>
-                        <Link className={buttonVariants({ variant: 'secondary' })} href="/cv-tarre.pdf" target="_blank">
+                        <Link className={buttonVariants({ variant: 'secondary' })} href="./Currículum%20Web%20-%20Jhoel%20Garcia%20Ladino.pdf" target="_blank">
                             <Paperclip className="mr-2" /> DESCARGAR CV
                         </Link>
                     </div>
                 </div>
-                <Image
-                    src="/profile.png"
-                    alt="Foto de perfil"
-                    width={500}
-                    height={500}
-                />
+                <div className="w-[250px] h-[250px] my-10 mx-auto rounded-full overflow-hidden border-[6px] border-[#2a4d25] shadow-[0_0_12px_rgba(42,77,37,0.4)] transition-transform duration-300 ease-in-out hover:scale-[1.03]">
+                    <Image
+                        src="/perfil01.jpg"
+                        alt="Foto de perfil"
+                        width={250}
+                        height={250}
+                        className="w-full h-full object-cover object-top block"
+                    />
+                </div>
             </div>
         </Container>
     );

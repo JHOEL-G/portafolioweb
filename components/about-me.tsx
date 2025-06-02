@@ -1,4 +1,4 @@
-import { dataAboutMe, dataSlider } from "@/data";
+import { dataAboutMe, dataSlider, dataContact } from "@/data";
 import Title from "./shared/title";
 import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
@@ -43,7 +43,15 @@ const AboutMe = () => {
                     </div>
                     <p className="my-8">Soy un programador de software con pasión por resolver problemas a través del código. Me encanta construir aplicaciones que no solo funcionen bien, sino que también se sientan bien de usar. Disfruto trabajar tanto en el frontend como en el backend, y siempre estoy aprendiendo nuevas tecnologías para mejorar mis habilidades. Creo firmemente que los programadores somos los arquitectos digitales del mundo moderno. Ya sea desarrollando una API eficiente, diseñando una interfaz intuitiva o depurando errores a las 2 a.m., me esfuerzo por dar lo mejor en cada línea de código.</p>
                     <Button>
-                        <Phone size={20} className="mr-2" /> HABLAMOS
+                        {dataContact.filter((datas) => datas.id ===1).map((datas) => (
+                            <a key={datas.id} href={datas.link} className="inline-flex items-center gap-2 text-white hover:underline">
+                                <Phone size={20} className="mr-2"/> LLAMAR:
+                                <hr />
+                                <div>
+                                    <p>{datas.subtitle}</p>
+                                </div>
+                            </a>
+                        ))}
                     </Button>
                 </div>
             </div>
