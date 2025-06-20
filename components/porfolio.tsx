@@ -16,7 +16,7 @@ const Porfolio = () => {
                         <div className="mt-5 flex gap-5">
                             <Link className={buttonVariants({variant: "outline"})} href={data.urlGithub} target="_blank"> GITHUB
                             </Link>
-                            <Link className={buttonVariants({})} href={data.urlDemo}> LIVE DEMO
+                            <Link className={buttonVariants({})} href={data.urlDemo} target="_blank"> LIVE DEMO
                             </Link>
                         </div>
                     </div>

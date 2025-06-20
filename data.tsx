@@ -97,10 +97,10 @@ export const dataPortfolio = [
     },
     {
         id: 4,
-        title: "Desarrollador Backend",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "MASTER SCHEDULER",
+        image: "/image-4.png",
+        urlGithub: "https://github.com/JHOEL-G/SISTEM_DE_VENTAS",
+        urlDemo: "https://sistem-de-ventas.vercel.app/",
     },
     {
         id: 5,
