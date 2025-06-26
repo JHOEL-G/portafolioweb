@@ -1,4 +1,12 @@
 import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
+import { DiBootstrap, DiCss3, DiGithubBadge, DiHtml5, DiJavascript1, DiLaravel, DiMysql, DiPostgresql, DiPython, DiReact } from "react-icons/di";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiDotnet } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
+import { FaDocker } from "react-icons/fa";
+
+
 
 export const dataAboutMe = [
     {
@@ -85,6 +93,7 @@ export const dataPortfolio = [
         id: 2,
         title: "Desarrollo Web Ágil",
         image: "/image-2.jpg",
+        description: "Aplicación de gestión de tareas desarrollada con React y Node.js. Permite crear, editar y eliminar tareas de manera eficiente.",
         urlGithub: "#!",
         urlDemo: "#!",
     },
@@ -92,6 +101,7 @@ export const dataPortfolio = [
         id: 3,
         title: "Spring Boot",
         image: "/image-3.jpg",
+        description: "Aplicación de gestión de tareas desarrollada con Spring Boot y React. Permite crear, editar y eliminar tareas de manera eficiente.",
         urlGithub: "#!",
         urlDemo: "#!",
     },
@@ -99,61 +109,92 @@ export const dataPortfolio = [
         id: 4,
         title: "MASTER SCHEDULER",
         image: "/image-4.png",
+        description: "Sistema de ventas desarrollado con C# y React. Permite gestionar productos, clientes y ventas de manera eficiente.",
         urlGithub: "https://github.com/JHOEL-G/SISTEM_DE_VENTAS",
         urlDemo: "https://sistem-de-ventas.vercel.app/",
     },
     {
         id: 5,
-        title: "Sitios Web Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "TIENDA ONLINE",
+        image: "/img5.png",
+        description: "Tienda online desarrollada con React y Node.js. Permite gestionar productos, clientes y ventas de manera eficiente.",
+        urlGithub: "https://github.com/JHOEL-G/tienda-online",
+        urlDemo: "https://tienda-online-n5e0.onrender.com/",
     },
     {
         id: 6,
         title: "Proyectos Web Dinámicos",
         image: "/image-6.jpg",
+        description: "Desarrollo de aplicaciones web dinámicas con React y Node.js, integrando bases de datos y APIs.",
         urlGithub: "#!",
         urlDemo: "#!",
     },
+
 ];
+
 
 
 export const dataExperience = [
     {
         id: 1,
-        title: "Frontend Developer 💻",
+        title: "Frontend Developer 🌐",
         experience: [
             {
                 name: "HTML",
-                subtitle: "Intermedio",
-                value: 80,
-            },
-            {
-                name: "CSS",
-                subtitle: "Intermedio",
-                value: 75,
-            },
-            {
-                name: "JavaScript",
-                subtitle: "Intermedio",
+                icono: <DiHtml5 size={18} />,
+                descripcion: "Base para estructurar contenido web.",
+                subtitle: "Uso Frecuente",
                 value: 60,
             },
             {
+                name: "CSS",
+                icono: <DiCss3 size={18} />,
+                descripcion: "Estilos para la presentación y diseño web.",
+                subtitle: "Uso Frecuente",
+                value: 50,
+            },
+            {
+                name: "JavaScript",
+                icono: <DiJavascript1 size={18} />,
+                descripcion: "Añado interactividad y lógica a las interfaces.",
+                subtitle: "En Practica",
+                value: 45,
+            },
+            {
                 name: "Tailwind CSS",
-                subtitle: "Basico",
-                value: 30,
+                icono: <RiTailwindCssFill size={18} />,
+                descripcion: "Aplico utility-first CSS para prototipado rápido.",
+                subtitle: "Familiarizado",
+                value: 40,
             },
             {
                 name: "React",
-                subtitle: "Basico",
-                value: 33,
+                icono: <DiReact size={18} />,
+                descripcion: "Explorando la creación de UI modernas con componentes.",
+                subtitle: "En Aprendizaje",
+                value: 40,
             },
             {
                 name: "Bootstrap",
-                subtitle: "Intermedio",
-                value: 50,
+                icono: <DiBootstrap size={18} />,
+                descripcion: "Utilizo componentes predefinidos para agilizar el diseño.",
+                subtitle: "Uso Regular",
+                value: 40,
             },
+            {
+                name: "Git y GitHub",
+                icono: <DiGithubBadge size={18} />,
+                descripcion: "Colaboro en proyectos y gestiono versiones de código.",
+                subtitle: "Uso Frecuente",
+                value: 60,
+            },
+            {
+                name: "Next.js",
+                icono: <RiNextjsFill size={18} />,
+                descripcion: "Construyo interfaces web con funcionalidades avanzadas de React.",
+                subtitle: "En Práctica",
+                value: 30,
+            }
         ],
     },
     {
@@ -162,34 +203,60 @@ export const dataExperience = [
         experience: [
             {
                 name: "Spring Boot",
-                subtitle: "Intermedio",
-                value: 68,
+                icono: <BiLogoSpringBoot size={18} />,
+                descripcion: "Construyo APIs RESTful y MVC en Java.",
+                subtitle: "En Practica",
+                value: 40,
             },
             {
                 name: "Postgres Sql",
-                subtitle: "Intermedio",
-                value: 75,
+                icono: <DiPostgresql size={18} />,
+                descripcion: "Gestiono y consulto bases de datos relacionales robustas.",
+                subtitle: "Uso Regular",
+                value: 50,
             },
             {
                 name: "Python",
-                subtitle: "Intermedio",
-                value: 60,
+                icono: < DiPython size={18} />,
+                descripcion: "Desarrollo lógica de negocio y APIs en entornos backend.",
+                subtitle: "En Practica",
+                value: 50,
             },
             {
                 name: "MySQL",
-                subtitle: "Intermedio",
+                icono: <DiMysql size={18} />,
+                descripcion: "Trabajo con bases de datos relacionales para persistencia de datos.",
+                subtitle: "En Practica",
                 value: 60,
             },
             {
                 name: "PHP - Laravel",
-                subtitle: "Basico",
+                icono: <DiLaravel size={18} />,
+                descripcion: "Aprendiendo a construir aplicaciones web con este framework.",
+                subtitle: "En Aprendizaje",
                 value: 30,
             },
             {
-                name: "C#",
-                subtitle: "Intermedio",
+                name: "C# - .NET",
+                icono: <SiDotnet size={18} />,
+                descripcion: "Desarrollo APIs y servicios web usando C# y el framework .NET.",
+                subtitle: "Uso Regular",
                 value: 50,
             },
+            {
+                name: "Azure",
+                icono: <VscAzure size={18} />,
+                descripcion: "Iniziando con servicios cloud de Microsoft para despliegue de aplicaciones.",
+                subtitle: "En Aprendizaje",
+                value: 30,
+            },
+            {
+                name: "Docker",
+                icono: <FaDocker size={18} />,
+                descripcion: "Explorando el uso de contenedores para entornos de desarrollo y despliegue.",
+                subtitle: "En Aprendizaje",
+                value: 20,
+            }
         ],
     },
 ];
@@ -289,7 +356,7 @@ export const dataContact = [
         title: "Teléfono",
         subtitle: "951 072 293",
         link: "tel:+51951072293",
-        buttonText: "LLAMAR", 
+        buttonText: "LLAMAR",
         icon: <Phone />,
     },
     {
@@ -297,7 +364,7 @@ export const dataContact = [
         title: "Github",
         subtitle: "https://github.com/JHOEL-G",
         link: "https://github.com/JHOEL-G",
-        buttonText: "VER PERFIL", 
+        buttonText: "VER PERFIL",
         icon: <Code2 />,
     },
     {
@@ -305,38 +372,38 @@ export const dataContact = [
         title: "Email",
         subtitle: "yuniorjhoelgarcia@gmail.com",
         link: "mailto:yuniorjhoelgarcia@gmail.com",
-        buttonText: "ENVIAR CORREO", 
+        buttonText: "ENVIAR CORREO",
         icon: <Inbox />,
     },
 ];
 
 export const dataLearnings = [
-  {
-    id: 1,
-    tech: "Oracle",
-    description:
-      "Aprendí a utilizar Oracle Database para gestionar grandes volúmenes de datos empresariales, incluyendo la creación de tablas, relaciones, consultas complejas con SQL y conceptos básicos de administración de base de datos. Esta habilidad es fundamental para cualquier rol relacionado con datos o backend.",
-    imageUrl: "/Oracle-Logo-1.png",
-  },
-  {
-    id: 2,
-    tech: "Red Hat Linux",
-    description:
-      "Me capacité en el uso de Red Hat Enterprise Linux, enfocado en la administración de sistemas operativos tipo Unix. Incluyó instalación de paquetes, gestión de usuarios, configuración de servicios y uso del terminal. Es una base sólida para roles en administración de sistemas y servidores.",
-    imageUrl: "/1175107.webp",
-  },
-  {
-    id: 3,
-    tech: "Cisco",
-    description:
-      "Estudié redes con tecnología Cisco, comprendiendo el funcionamiento de redes LAN, direccionamiento IP, protocolos como TCP/IP, y configuraciones básicas de routers y switches. Estos conocimientos son clave para roles en redes, soporte técnico o infraestructura.",
-    imageUrl: "/Cisco-Pride-Logo-2006.png.webp",
-  },
-  {
-    id: 4,
-    tech: "Linux",
-    description:
-      "Me familiaricé con el entorno Linux en general, usando comandos de terminal para navegación, manipulación de archivos, gestión de procesos y scripting básico en bash. Es una competencia esencial para desarrolladores, administradores de sistemas y entornos DevOps.",
-    imageUrl: "/linux-logo-png-transparent.png",
-  },
+    {
+        id: 1,
+        tech: "Oracle",
+        description:
+            "Aprendí a utilizar Oracle Database para gestionar grandes volúmenes de datos empresariales, incluyendo la creación de tablas, relaciones, consultas complejas con SQL y conceptos básicos de administración de base de datos. Esta habilidad es fundamental para cualquier rol relacionado con datos o backend.",
+        imageUrl: "/Oracle-Logo-1.png",
+    },
+    {
+        id: 2,
+        tech: "Red Hat Linux",
+        description:
+            "Me capacité en el uso de Red Hat Enterprise Linux, enfocado en la administración de sistemas operativos tipo Unix. Incluyó instalación de paquetes, gestión de usuarios, configuración de servicios y uso del terminal. Es una base sólida para roles en administración de sistemas y servidores.",
+        imageUrl: "/1175107.webp",
+    },
+    {
+        id: 3,
+        tech: "Cisco",
+        description:
+            "Estudié redes con tecnología Cisco, comprendiendo el funcionamiento de redes LAN, direccionamiento IP, protocolos como TCP/IP, y configuraciones básicas de routers y switches. Estos conocimientos son clave para roles en redes, soporte técnico o infraestructura.",
+        imageUrl: "/Cisco-Pride-Logo-2006.png.webp",
+    },
+    {
+        id: 4,
+        tech: "Linux",
+        description:
+            "Me familiaricé con el entorno Linux en general, usando comandos de terminal para navegación, manipulación de archivos, gestión de procesos y scripting básico en bash. Es una competencia esencial para desarrolladores, administradores de sistemas y entornos DevOps.",
+        imageUrl: "/linux-logo-png-transparent.png",
+    },
 ];

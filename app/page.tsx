@@ -8,6 +8,7 @@ import Porfolio from "@/components/porfolio";
 import Service from "@/components/service";
 import Navbar from "@/components/ui/Navbar"; 
 
+
 export default function Home() {
   return (
     <main className="pb-40">
