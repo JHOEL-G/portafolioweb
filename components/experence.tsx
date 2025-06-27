@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { dataExperience } from "@/data";
 import Title from "./shared/title";
 import { Progress } from "./ui/progress";
@@ -8,6 +8,7 @@ import { FiChevronUp, FiChevronDown } from 'react-icons/fi';
 
 const Experence = () => {
     const [showAllSkills, setShowAllSkills] = useState<Record<number, boolean>>({});
+    const categoryRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
     const initialSkillsToShow = 4;
 
@@ -17,6 +18,48 @@ const Experence = () => {
             [categoryId]: !(Boolean(prevState[categoryId]))
         }));
     };
+
+    const isElementInViewport = (el: HTMLDivElement) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top < (window.innerHeight || document.documentElement.clientHeight) && rect.bottom > 0;
+    };
+
+    const collapseSkillsOutOfView = useCallback(() => {
+        setShowAllSkills(prevState => {
+            const newState = { ...prevState };
+            let changed = false;
+            Object.keys(categoryRefs.current).forEach(id => {
+                const categoryId = Number(id);
+                const ref = categoryRefs.current[categoryId];
+                if (newState[categoryId] && ref && !isElementInViewport(ref)) {
+                    newState[categoryId] = false;
+                    changed = true;
+                }
+            });
+            return changed ? newState : prevState;
+        });
+    }, []);
+
+    useEffect(() => {
+        let timeout: NodeJS.Timeout | null = null;
+        const handleScroll = () => {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(() => {
+                collapseSkillsOutOfView();
+            }, 100);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+        };
+    }, [collapseSkillsOutOfView]);
 
     const getCollapsedHeight = (skillsCount: number) => {
         const itemHeight = 40;
@@ -32,7 +75,6 @@ const Experence = () => {
         return (numRows * totalHeightPerItem) + totalGapY;
     };
 
-
     return (
         <div className="p-6 md:px-12 md:py-44 max-w-5xl mx-auto">
             <Title title="MIS HABILIDADES" subtitle="SKILLS TÉCNICAS" />
@@ -47,14 +89,18 @@ const Experence = () => {
                         : `${getCollapsedHeight(initialSkillsToShow)}px`;
 
                     return (
-                        <div key={data.id} className="p-6 rounded-xl border border-gray-400 flex flex-col">
+                        <div
+                            key={data.id}
+                            ref={el => { categoryRefs.current[data.id] = el; }}
+                            className="p-6 rounded-xl border border-gray-400 flex flex-col"
+                        >
                             <div className="flex justify-between items-center mb-6">
                                 <h3 className="text-xl">{data.title}</h3>
 
                                 {hasMoreSkills && (
                                     <button
                                         onClick={() => toggleShowAll(data.id)}
-                                        className="p-1 rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                                        className="p-1 rounded-full bg-green-600 text-white hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                                         aria-label={isExpanded ? "Ver menos habilidades" : "Ver más habilidades"}
                                     >
                                         {isExpanded ? (
@@ -67,17 +113,18 @@ const Experence = () => {
                             </div>
 
                             <div
+
                                 className="overflow-hidden transition-all duration-500 ease-in-out"
                                 style={{ maxHeight: dynamicMaxHeight }}
                             >
-                                <div className="grid md:grid-cols-2 gap-x-4 gap-y-8">
+                                <div className="grid md:grid-cols-2 gap-x-4 gap-y-1">
                                     {data.experience.map((item) => (
                                         <div key={item.name} className="flex flex-col my-4">
-                                            <p className="flex gap-2 mb-1 items-center">
+                                            <p className="flex gap-2 mb-2 items-center">
                                                 {item.icono}
                                                 <span className="font-semibold text-lg">{item.name}</span>
                                             </p>
-                                            <div className="flex-grow min-h-[40px] flex items-center">
+                                            <div className="flex-grow min-h-[45px] flex items-center">
                                                 {item.descripcion && (
                                                     <p className="text-gray-500 text-xs leading-tight">
                                                         {item.descripcion}
