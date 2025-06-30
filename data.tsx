@@ -124,10 +124,10 @@ export const dataPortfolio = [
     {
         id: 6,
         title: "Proyectos Web Dinámicos",
-        image: "/image-6.jpg",
-        description: "Desarrollo de aplicaciones web dinámicas con React y Node.js, integrando bases de datos y APIs.",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        image: "/img6.png",
+        description: "Aplicación de gestión de tareas desarrollada con React y Node.js",
+        urlGithub: "https://github.com/JHOEL-G/Pagina",
+        urlDemo: "https://masterenginer.netlify.app/",
     },
 
 ];
