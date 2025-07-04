@@ -1,4 +1,4 @@
-import { dataPortfolio } from "@/dataPortfolio";
+import { dataPortfolio } from "@/data";
 import Title from "./shared/title";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +6,7 @@ import { buttonVariants } from "./ui/button";
 
 const Porfolio = () => {
     return (
-        <div className="p-4 max-w-4xl md:py-24 mx-auto" id="porfolio">
+        <div className="p-1 max-w-4xl md:py-30 mx-auto" id="porfolio">
             <Title title="PORTAFOLIO" subtitle="TRABAJOS RECIENTES 💼" />
             <div className="grid md:grid-cols-3 gap-13 mt-4 md:gap-8">
                 {dataPortfolio.map((data) => (
@@ -26,7 +26,7 @@ const Porfolio = () => {
                         </div>
 
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm flex-grow font-extralight mt-5 mb-5">
-                            {data.description}
+                            {data.description || 'SIN DESCRIPCION'}
                         </p>
 
                         <div className="mt-auto flex gap-4 justify-center">

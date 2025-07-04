@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { dataLearnings } from "@/data";
 import Title from "./shared/title";
 import {
@@ -10,7 +11,7 @@ import {
 
 const Learnings = () => {
   return (
-    <div className="p-4 md:px-12 md:py-44 max-w-5xl mx-auto">
+    <div className="p-4 md:px-12 md:py-35 max-w-5xl mx-auto">
       <Title title="LO APRENDIDO" subtitle="Tecnologías y habilidades que he desarrollado" />
 
       <Carousel className="mx-10 mt-6">
@@ -22,9 +23,11 @@ const Learnings = () => {
             >
               <img
                 src={item.imageUrl}
-                alt={item.tech}
+                alt={`Logo de ${item.tech}`}
+                loading="lazy"
                 className="w-20 h-20 object-contain mb-4"
               />
+
               <h3 className="text-2xl font-semibold mb-2">{item.tech}</h3>
               <p className="text-sm">{item.description}</p>
             </CarouselItem>
