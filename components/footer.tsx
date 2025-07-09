@@ -14,8 +14,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full md:w-auto text-center mt-5">
-                <h4 className="text-3xl font-bold whitespace-nowrap">SOFTWARE ENGINEERING WITH AI</h4>
+                <h4 className="text-xl md:text-3xl font-bold whitespace-normal md:whitespace-nowrap">
+                    SOFTWARE ENGINEERING WITH AI
+                </h4>
             </div>
+
             <Separator className="my-10 md:my-10" />
             <div className="text-center text-sm text-gray-500">&copy; 2025 LA PAGINA DE MI PORTAFOLIO</div>
         </footer>
