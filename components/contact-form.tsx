@@ -46,11 +46,9 @@ const ContactForm = () => {
         setSuccessForm(true);
         form.reset();
       } else {
-        // Podrías manejar errores aquí
         setSuccessForm(false);
       }
     } catch (error) {
-      // Manejo de error de red o inesperado
       setSuccessForm(false);
       console.error("Error enviando formulario:", error);
     }

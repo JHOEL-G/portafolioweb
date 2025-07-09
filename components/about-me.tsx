@@ -41,11 +41,13 @@ const AboutMe = () => {
                             </div>
                         )}
                     </div>
-                    <p className="my-8">Soy un programador de software con pasión por resolver problemas a través del código. Me encanta construir aplicaciones que no solo funcionen bien, sino que también se sientan bien de usar. Disfruto trabajar tanto en el frontend como en el backend, y siempre estoy aprendiendo nuevas tecnologías para mejorar mis habilidades. Creo firmemente que los programadores somos los arquitectos digitales del mundo moderno. Ya sea desarrollando una API eficiente, diseñando una interfaz intuitiva o depurando errores a las 2 a.m., me esfuerzo por dar lo mejor en cada línea de código.</p>
+                    <p className="my-8">
+                        Soy un programador apasionado por resolver problemas con código, creando aplicaciones funcionales y con una excelente experiencia de usuario. Disfruto el desarrollo frontend y backend, y siempre estoy en constante aprendizaje de nuevas tecnologías y mejores prácticas. Mi objetivo es aplicar mis conocimientos en proyectos desafiantes, aportando soluciones innovadoras y de calidad en cada línea de código, buscando la mejora continua.
+                    </p>
                     <Button>
-                        {dataContact.filter((datas) => datas.id ===1).map((datas) => (
+                        {dataContact.filter((datas) => datas.id === 1).map((datas) => (
                             <a key={datas.id} href={datas.link} className="inline-flex items-center gap-2 text-white hover:underline">
-                                <Phone size={20} className="mr-2"/> LLAMAR:
+                                <Phone size={20} className="mr-2" /> LLAMAR:
                                 <hr />
                                 <div>
                                     <p>{datas.subtitle}</p>

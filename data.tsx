@@ -1,5 +1,5 @@
 import { BellPlus, BookText, Briefcase, Brush, Code2, CodeSquare, Home, Inbox, Mail, PanelsTopLeft, Phone, UserRound, UsersRound, Wrench } from "lucide-react";
-import { DiBootstrap, DiCss3, DiGithubBadge, DiHtml5, DiJavascript1, DiLaravel, DiMysql, DiPostgresql, DiPython, DiReact } from "react-icons/di";
+import { DiBootstrap, DiCss3, DiCss3Full, DiGithubBadge, DiHtml5, DiJavascript1, DiLaravel, DiMysql, DiPostgresql, DiPython, DiReact } from "react-icons/di";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { SiDotnet } from "react-icons/si";
@@ -13,19 +13,19 @@ export const dataAboutMe = [
         id: 1,
         name: "Experiencia",
         icon: <Briefcase />,
-        description: "+1 año de experiencia",
+        description: "+2 año de experiencia",
     },
     {
         id: 2,
-        name: "Clientes",
+        name: "Cursos Completados",
         icon: <UsersRound />,
-        description: "No hay clientes por el momento",
+        description: "+5 cursos en línea",
     },
     {
         id: 3,
         name: "Proyectos",
         icon: <Wrench />,
-        description: "+3 completados",
+        description: "+4 completados",
     },
 ];
 
@@ -86,7 +86,16 @@ export const dataPortfolio = [
         id: 1,
         title: "Web Pro",
         image: "/proyecto1.png",
-        description: "Proyecto en desarrollo, enfocado en diseño web moderno y funcionalidades interactivas.",
+        iconos: (
+            <>
+                <DiReact size={30} />
+                <RiTailwindCssFill size={30} />
+                <RiNextjsFill size={30} />
+                <SiDotnet size={30} />
+                <DiPostgresql size={30} />
+            </>
+        ),
+        description: "Proyecto en desarrollo, enfocado en diseño web moderno y funcionalidades interactivas. (Proyecto no Acabado)",
         urlGithub: "https://github.com/JHOEL-G/PaginaOnline",
         urlDemo: "https://paginaonlin.netlify.app/",
     },
@@ -94,7 +103,14 @@ export const dataPortfolio = [
         id: 2,
         title: "Desarrollo Web Nativo",
         image: "/proyecto2.png",
-        description: "Sitio web completo hecho con HTML, CSS y JavaScript puro, sin frameworks.",
+        iconos: (
+            <>
+                <DiHtml5 size={30} />
+                <DiCss3Full size={30} />
+                <DiJavascript1 size={30} />
+            </>
+        ),
+        description: "Sitio web completo hecho con HTML, CSS y JavaScript puro, sin .",
         urlGithub: "https://github.com/JHOEL-G/nativo",
         urlDemo: "https://proyectonativo.netlify.app/",
     },
@@ -102,7 +118,15 @@ export const dataPortfolio = [
         id: 3,
         title: "Spring Boot",
         image: "/image-2.jpg",
-        description: "Aplicación de gestión de tareas desarrollada con Spring Boot y React .",
+        iconos: (
+            <>
+                <BiLogoSpringBoot size={30} />
+                <DiPostgresql size={30} />
+                <DiReact size={30} />
+                <RiTailwindCssFill size={30} />
+            </>
+        ),
+        description: "Aplicación de gestión de tareas desarrollada con Spring Boot y React . (Proyecto no Acabado)",
         urlGithub: "#!",
         urlDemo: "#!",
     },
@@ -110,6 +134,14 @@ export const dataPortfolio = [
         id: 4,
         title: "MASTER SCHEDULER",
         image: "/image-4.png",
+        iconos: (
+            <>
+                <SiDotnet size={30} />
+                <DiPostgresql size={30} />
+                <DiReact size={30} />
+                <RiTailwindCssFill size={30} />
+            </>
+        ),
         description: "Sistema de ventas desarrollado con C# y React. Permite gestionar productos, clientes y ventas de manera eficiente.",
         urlGithub: "https://github.com/JHOEL-G/SISTEM_DE_VENTAS",
         urlDemo: "https://sistem-de-ventas.vercel.app/",
@@ -118,7 +150,14 @@ export const dataPortfolio = [
         id: 5,
         title: "TIENDA ONLINE",
         image: "/img5.png",
-        description: "Sistema de ventas desarrollado con C# y React. Permite gestionar productos, clientes y ventas de manera eficiente.",
+        iconos: (
+            <>
+                <DiPostgresql size={30} />
+                <DiReact size={30} />
+                <RiTailwindCssFill size={30} />
+            </>
+        ),
+        description: "Sistema de ventas desarrollado React. Permite gestionar productos, clientes y ventas de manera eficiente.",
         urlGithub: "https://github.com/JHOEL-G/tienda-online",
         urlDemo: "https://tienda-online-n5e0.onrender.com/",
     },
@@ -126,6 +165,15 @@ export const dataPortfolio = [
         id: 6,
         title: "INTELIGENCIA ARTIFICIAL",
         image: "/img6.png",
+        iconos: (
+            <>
+                <DiPython size={30} />
+                <DiPostgresql size={30} />
+                <DiReact size={30} />
+                <RiTailwindCssFill size={30} />
+
+            </>
+        ),
         description: "Aplicación de inteligencia artificial desarrollada con Python y React. Permi ite predecir el precio de las acciones de manera eficiente.",
         urlGithub: "https://github.com/JHOEL-G/Pagina",
         urlDemo: "https://masterenginer.netlify.app/",
@@ -217,7 +265,7 @@ export const dataExperience = [
                 value: 10,
             },
             {
-                name: "Python",
+                name: "Python - Nativo",
                 icono: < DiPython size={18} />,
                 descripcion: "Desarrollo lógica de negocio y APIs en entornos backend.",
                 subtitle: "Estoy Aprendiendo",
@@ -231,7 +279,7 @@ export const dataExperience = [
                 value: 10,
             },
             {
-                name: "PHP - Laravel",
+                name: "PHP - Nativo",
                 icono: <DiLaravel size={18} />,
                 descripcion: "Aprendiendo a construir aplicaciones web con este framework.",
                 subtitle: "En Aprendizaje",
@@ -269,86 +317,47 @@ export const dataServices = [
         title: "Desarrollo Web",
         icon: <PanelsTopLeft />,
         features: [
-            {
-                name: "Desarrollo de sitios web personalizados",
-            },
-            {
-                name: "Diseño y desarrollo responsive",
-            },
-            {
-                name: "Construcción de componentes reutilizables con React",
-            },
-            {
-                name: "Desarrollo de aplicaciones web",
-            },
-            {
-                name: "Manejo básico de herramientas como Git, GitHub, Vite y npm/yarn.",
-            },
-            {
-                name: "Manejo básico de herramientas como Git, GitHub, Vit",
-            },
-            {
-                name: "Uso de frameworks como Bootstrap o Tailwind CSS.",
-            },
+            { name: "Sitios web responsive con HTML, CSS y JavaScript" },
+            { name: "Componentes reutilizables con React y Tailwind CSS" },
+            { name: "Manejo básico de Git, GitHub, Vite y npm/yarn" },
+            { name: "Consumo de APIs y uso de Axios o Fetch" },
+            { name: "Enrutamiento con React Router" },
+            { name: "Validación de formularios con React Hook Form" },
+            { name: "Despliegue en Vercel o Netlify" },
         ],
     },
     {
         id: 2,
-        title: "Creación de APIs RESTful",
+        title: "Desarrollo de APIs REST",
         icon: <BellPlus />,
         features: [
-            {
-                name: "Desarrollo de APIs RESTful utilizando Spring Boot.",
-            },
-            {
-                name: "Manejo de bases de datos relacionales como MySQL y PostgreSQL usando JPA/Hibernate.",
-            },
-            {
-                name: "Gestión de autenticación y autorización con Spring Security (login, registro, JWT)",
-            },
-            {
-                name: "Uso de herramientas de desarrollo como Postman, Docker (básico) y Git/GitHub",
-            },
-            {
-                name: "Conexión y consumo de APIs externas",
-            },
-            {
-                name: "Estructura de proyectos por capas (Controller - Service - Repository)",
-            },
-            {
-                name: "Manejo de errores, validaciones y respuestas estándar en APIs",
-            },
-            {
-                name: "Creación de controladores, servicios y modelos siguiendo la arquitectura MVC y Clean Architecture.",
-            },
+            { name: "APIs RESTful con Spring Boot y Spring Security" },
+            { name: "Persistencia con JPA/Hibernate MySQL/PostgreSQL" },
+            { name: "Manejo de errores y validación en Spring Boot" },
+            { name: "APIs RESTful con C# .NET Core 8 y JWT Authentication" },
+            { name: "Persistencia con Entity Framework Core (SQL Server/PostgreSQL)" },
+            { name: "Manejo de errores y validación en .NET Core" },
+            { name: "Documentación básica con Swagger OpenAPI" },
+            { name: "Despliegue básico de aplicaciones" },
         ],
     },
     {
         id: 3,
-        title: "En Aprendizaje de Programacio Full Stack",
+        title: "En proceso de formación Full Stack",
         icon: <Brush />,
         features: [
-            {
-                name: "Arquitectura de microservicios y uso de Spring Cloud / Eureka / API Gateway",
-            },
-            {
-                name: "Testing de servicios con JUnit y Mockito",
-            },
-            {
-                name: "TypeScript para escribir código más robusto",
-            },
-            {
-                name: "Buenas prácticas de testing y herramientas como Jest o React Testing Library.",
-            },
-            {
-                name: "Conceptos de Next.js y rendimiento en aplicaciones web.",
-            },
-            {
-                name: "Principios SOLID y buenas prácticas en C#",
-            },
+            { name: "Aprendiendo arquitectura de microservicios" },
+            { name: "Iniciación en patrones de diseño comunes" },
+            { name: "Manejo de pruebas unitarias (JUnit, Jest, XUnit)" },
+            { name: "Explorando Next.js y TypeScript para frontend" },
+            { name: "Estudiando principios SOLID y Clean Architecture" },
+            { name: "Uso de Git/GitHub para control de versiones y colaboración" },
+            { name: "Resolución de problemas y depuración de código" },
+            { name: "Conocimientos básicos de Docker para despliegue" }
         ],
     },
 ];
+
 
 
 export const dataContact = [
@@ -358,6 +367,14 @@ export const dataContact = [
         subtitle: "951 072 293",
         link: "tel:+51951072293",
         buttonText: "LLAMAR",
+        icon: <Phone />,
+    },
+    {
+        id: 4,
+        title: "WhatsApp",
+        subtitle: "DESARROLLADOR",
+        link: "https://wa.me/951072293",
+        buttonText: "ESCRIBEME",
         icon: <Phone />,
     },
     {
@@ -382,29 +399,25 @@ export const dataLearnings = [
     {
         id: 1,
         tech: "Oracle",
-        description:
-            "Aprendí a utilizar Oracle Database para gestionar grandes volúmenes de datos empresariales, incluyendo la creación de tablas, relaciones, consultas complejas con SQL y conceptos básicos de administración de base de datos. Esta habilidad es fundamental para cualquier rol relacionado con datos o backend.",
+        description: "Manejo de Oracle Database para gestión de datos, incluyendo SQL y conceptos básicos de administración de BD. Fundamental para roles de backend (Java) y datos.",
         imageUrl: "/Oracle-Logo-1.png",
     },
     {
         id: 2,
         tech: "Red Hat Linux",
-        description:
-            "Me capacité en el uso de Red Hat Enterprise Linux, enfocado en la administración de sistemas operativos tipo Unix. Incluyó instalación de paquetes, gestión de usuarios, configuración de servicios y uso del terminal. Es una base sólida para roles en administración de sistemas y servidores.",
+        description: "Administración básica de Red Hat Enterprise Linux, cubriendo instalación de paquetes, gestión de usuarios y uso de terminal. Útil para entornos de servidor.",
         imageUrl: "/1175107.webp",
     },
     {
         id: 3,
         tech: "Cisco",
-        description:
-            "Estudié redes con tecnología Cisco, comprendiendo el funcionamiento de redes LAN, direccionamiento IP, protocolos como TCP/IP, y configuraciones básicas de routers y switches. Estos conocimientos son clave para roles en redes, soporte técnico o infraestructura.",
+        description: "Conocimientos básicos de redes con Cisco, incluyendo direccionamiento IP, protocolos (TCP/IP) y configuración de routers/switches. Clave para infraestructura.",
         imageUrl: "/Cisco-Pride-Logo-2006.png.webp",
     },
     {
         id: 4,
         tech: "Linux",
-        description:
-            "Me familiaricé con el entorno Linux en general, usando comandos de terminal para navegación, manipulación de archivos, gestión de procesos y scripting básico en bash. Es una competencia esencial para desarrolladores, administradores de sistemas y entornos DevOps.",
+        description: "Dominio general de Linux vía terminal para navegación, manipulación de archivos y scripting básico. Esencial para desarrollo y DevOps.",
         imageUrl: "/linux-logo-png-transparent.png",
     },
 ];

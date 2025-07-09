@@ -3,23 +3,29 @@ import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "./ui/button";
 import Container from "./shared/container";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Introduction = () => {
     return (
         <Container>
             <div className="text-center" id="home">
-                <h3 className="text-xl mb-3">HOLA A TODOS</h3>
+                <h3 className="text-xl mb-3">HOLA A TODOS, SOY</h3>
                 <h1 className="text-4xl font-bold mb-3">
                     JUNIOR JHOEL GARCIA LADINO 👨‍💻
                 </h1>
-                <h2 className="text-2xl text-gray-400">FULL STACK DEVELOPER JUNIOR</h2>
-                <div className="flex items-center">
-                    <div className="flex flex-col md:flex-row gap-4 justify-between mt-10 mx-auto">
+                <h2 className="text-2xl text-gray-400">INGENIERO DE SOFTWARE DESARROLLADOR FULL STACK JUNIOR
+                </h2>
+                <div className="flex items-center justify-center">
+                    <div className="flex flex-col md:flex-row gap-3 justify-between mt-10">
                         <Link className={buttonVariants()} href="#contact">
                             <Mail className="mr-2" /> CONTACTA CONMIGO
                         </Link>
                         <Link className={buttonVariants({ variant: 'secondary' })} href="./Currículum%20Web%20-%20Jhoel%20Garcia%20Ladino.pdf" target="_blank">
                             <Paperclip className="mr-2" /> DESCARGAR CV
+                        </Link>
+                        <Link className={buttonVariants()} href="https://wa.me/951072293"
+                        >
+                            <FaWhatsapp className="mr-2" />ENVIAME MENSAJE
                         </Link>
                     </div>
                 </div>
